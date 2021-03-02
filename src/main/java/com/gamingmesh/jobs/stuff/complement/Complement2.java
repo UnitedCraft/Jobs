@@ -14,13 +14,13 @@ import org.bukkit.inventory.meta.ItemMeta;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainComponentSerializer;
 
-public class Complement2 implements Complement {
+public final class Complement2 implements Complement {
 
-	protected String serialize(Component component) {
+	private String serialize(Component component) {
 		return PlainComponentSerializer.plain().serialize(component);
 	}
 
-	protected Component deserialize(String t) {
+	private Component deserialize(String t) {
 		return PlainComponentSerializer.plain().deserialize(t);
 	}
 
